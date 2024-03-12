@@ -38,7 +38,8 @@ int main() {
     decrypt(str, shift);
     printf("Chaine dechifree: %s\n", str);
 
-    return 0;
 
-    //TEST YOUSSEF
+    return 0;
+    printf("bonjour string");
+
 }
