@@ -11,6 +11,9 @@ void encryptString(char* str, int shift) {
         i++;
     }
 }
+void decrypt(char* str, int shift) {
+        encryptString(str, 26 - shift);
+        }
 
 int main() {
     char str[100];
@@ -25,6 +28,15 @@ int main() {
     encryptString(str, shift);
 
     printf("Chaîne chiffréete: %s\n", str);
+
+      while (getchar() != '\n');
+
+    printf("Entrer la chaine a decrypter: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+
+    decrypt(str, shift);
+    printf("Chaine dechifree: %s\n", str);
 
     return 0;
 }
