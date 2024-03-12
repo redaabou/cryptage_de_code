@@ -40,5 +40,5 @@ int main() {
 
     return 0;
 
-    // test_reda
+    printf("Enter un string: ");
 }
