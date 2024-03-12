@@ -39,4 +39,6 @@ int main() {
     printf("Chaine dechifree: %s\n", str);
 
     return 0;
+
+    // test_reda
 }
